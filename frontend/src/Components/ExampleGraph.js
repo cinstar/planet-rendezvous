@@ -57,7 +57,7 @@ const nodeData = [
   id: index + 1,
   name,
   position: getRandomPosition(30), // Nodes are within a smaller area
-  color: `hsl(${Math.random() * 360}, 70%, 50%)`
+  color: `hsl(${Math.random() * 360}, 100%, 50%)`
 }));
 
 // -------------------------
@@ -104,7 +104,7 @@ const ExampleNode = ({ position, onClick, color, label }) => {
     <mesh ref={meshRef} position={position} onClick={onClick}>
       <sphereGeometry args={[0.5, 32, 32]} />
       <meshStandardMaterial color={color} />
-      <Html position={[0, 0.7, 0]}>
+      {/* <Html position={[0, 0.7, 0]}>
         <div style={{
           color: 'white',
           background: 'rgba(0,0,0,0.6)',
@@ -114,7 +114,7 @@ const ExampleNode = ({ position, onClick, color, label }) => {
         }}>
           {label}
         </div>
-      </Html>
+      </Html> */}
     </mesh>
   );
 };
@@ -171,7 +171,7 @@ const ExampleGraph = () => {
           position={node.position}
           color={node.color}
           onClick={() => handleNodeClick(node)}
-          label={node.name}
+          // label={node.name}
         />
       ))}
 

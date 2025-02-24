@@ -33,9 +33,9 @@ const Graph3D = ({ nodes, edges, onNodeClick }) => (
       <Node
         key={node.id}
         position={node.position}
-        color={node.color}
+        // color={node.color}
         onClick={() => onNodeClick(node)}
-        name={node.name}
+        // name={node.name}
       />
     ))}
     {edges.map((edge, idx) => (

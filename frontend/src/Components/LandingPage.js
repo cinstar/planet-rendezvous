@@ -13,13 +13,13 @@ const LandingPage = () => (
   }}>
     <h1>Welcome to Plan-et Rendezvous</h1>
     <p>Explore a galaxy of date ideas through an interactive 3D experience.</p>
+    <Link to="/register" style={{ color: 'white', fontSize: '18px' }}>Create an Account</Link>
     
     <div style={{ margin: 'auto', width: '90%', height: '600px' }}>
       <ExampleGraph />
     </div>
 
     <br />
-    <Link to="/register" style={{ color: 'white', fontSize: '18px' }}>Create an Account</Link>
   </div>
 );
 
